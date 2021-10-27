@@ -1,0 +1,57 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    font-family: 'montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+#checked{
+    border-bottom: 2px solid #fe5339;
+}
+main{
+    position: relative;
+    
+    margin: 1em;
+    padding: 0;
+    /* margin: 1em; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+}
+main h2{
+    margin-top: 2em;
+    text-transform: uppercase;
+    color: rgb(58, 51, 51);
+}
+.cancel-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 7em;
+}
+.cancel-form input, button{
+    margin: 1em;
+}
+.cancel-form input{
+    padding: 0.5em;
+    width: 20em;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    font-size: medium;
+    background-color: rgb(245, 245, 245);
+}
+.cancel-form button{
+    width: 10em;
+    margin: 1em;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}

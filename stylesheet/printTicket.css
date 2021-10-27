@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', Open_Sans, Georgia, Times New Roman, Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#checked{
+    border-bottom: 2px solid #fe5339;
+}
+main{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+main h1, h3{
+    margin: 0.5em;
+    color: rgb(58, 51, 51);
+}
+main h3{
+    font-weight: 400;
+}
+main form{
+    color: rgb(58, 51, 51);
+    margin: 2em;
+    margin-top: 0.2em;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "ticket-label email-label email-label" 
+    "ticket-input email-input submit-button";
+    grid-gap: 0.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    
+}
+.ticket-label{
+    align-self: flex-end;
+    margin: 0;
+    text-align: left;
+    grid-area: ticket-label;
+}
+.email-label{
+    align-self: flex-end;
+    text-align: left;
+    grid-area: email-label;
+}
+.ticket-input{
+    grid-area: ticket-input;
+}
+.email-input{
+    grid-area: email-input;  
+}
+.email-input, .ticket-input{
+    border-radius: 0;
+    border: 1px solid grey;
+    padding: 0.5em 0.5em;
+    width: 15em;
+    outline: none;
+    font-size: 14px;
+}
+.submit-button{
+    grid-area: submit-button;
+    border-radius: 0;
+    border: none;
+    background-color: #fe5339;
+    padding: 1em;
+    width: 15em;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(27, 26, 26);
+    cursor: pointer;
+}

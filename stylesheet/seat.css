@@ -1,0 +1,181 @@
+.seat-price-container{
+    border-top: 1px solid rgb(194, 194, 194);
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+/* Seat-container */
+.seat-container{
+    perspective: 1000px;
+    width: 40em;
+    border-right: 1px solid rgb(194, 194, 194);
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.seat-container ul{
+    display: flex;
+    align-self: center;
+    margin: 1em;
+    padding: auto;
+}
+.seat-container ul li{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seat{
+    border: 1px solid black;
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    margin: 0.2em;
+}
+.booked{
+    background-color: grey;
+}
+.selected{
+    background-color: #fc8471;
+}
+
+.seat:not(.booked):hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.showcase .seat:not(.booked):hover{
+    cursor:default;
+    transform: scale(1);
+}
+.showcase{
+    background-color: rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.showcase li small{
+    margin: 5px;
+}
+.lower-deck-container, .upper-deck-container{
+    width: 25em  ;
+    display: flex;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: rgb(233, 233, 233);
+    flex-direction: column;
+    border-left: 4px solid grey;
+    align-items: center;
+    justify-content: center;
+}
+.seat-container p, .seat-container p{
+    background-color: rgb(197, 197, 197);
+    width: 70%;
+    padding: 0.2em;
+    color: white;
+    margin-bottom: 0.5em;
+}
+.row{
+    display: flex;
+    margin: 0.2em;
+}
+.left-side{
+    margin: 0.5em 0;
+}
+
+
+/* Price-container */
+.price-container{
+    height: 80%;
+    width: 25em;
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: arial;
+    color: rgb(0, 0, 0);
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 5px 0.5px grey;
+    border-radius: 3px;
+}
+.price-container *{
+    margin: 0.3em 0;
+}
+.bus-name-s{
+    font-size: large;
+    color: white;
+    background-color: #162f5e;
+    width: 100%;
+    padding: 0.5em;
+    text-align: left;
+    border-radius: 3px;
+}
+.bus-type-s{
+    font-weight: 400;
+}
+.boarding-point p:last-child{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+.boarding-point{
+    border-top: 2px solid grey;
+    width: 100%;
+}
+.dropping-point{
+    border-bottom: 2px solid grey;
+    width: 100%;
+}
+.dropping-point p:last-child{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+.date-content-s{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: black;
+    font-weight: 300;
+}
+.price-seat-content{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.price-seat-content *{
+    margin-right: 2em;
+}
+.price-content p:last-child{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    font-weight: 300;
+}
+.seat-content p:last-child{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+.confirm-btn{
+    border: none;
+    padding: 0.5em 2em;
+    background-color: grey;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    pointer-events: none;
+    user-select: none;
+}

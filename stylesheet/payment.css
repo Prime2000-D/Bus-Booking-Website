@@ -1,0 +1,100 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 40px;
+    color: #fe5339;
+    background-color: rgb(22, 47, 94);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.place-tag, .traveller{
+    width: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+.main-container{
+    margin: 3em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.payment-method, .booking-summary, .booking-fare, .passenger-list{
+    color: rgb(22, 47, 94);
+    background-color: white;
+    font-weight: 500;
+    box-shadow: 0 0 5px 1px rgba(128, 128, 128, 0.603);
+}
+.payment-method{
+    width: 32em;
+}
+.booking-summary,.booking-fare, .passenger-list{
+    width: 20em;
+    margin-bottom: 2em;
+}
+.booking-summary *:not(h4),.booking-fare *:not(h4), .passenger-list *:not(h4){
+    padding: 0.5em;
+}
+.sidebar h4{
+    background-color: #fe5339;
+    padding: 0.5em 0.8em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.payment-method *{
+    margin-bottom: 5px;
+}
+.card-upper,.card-lower{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.card-title{
+    padding: 1em;
+}
+.card-content{
+    padding: 0.5em 2em ;
+    display: flex;
+    flex-direction: column;
+}
+.payment-method input{
+    border: 0;
+    border-bottom: 2px solid #aa9693;
+    border-radius: 0;
+    padding: 2px 0;
+    outline: none;
+    font-size: medium;
+    font-weight: 300;
+}
+.payment-method p{
+    width: 20em;
+}
+.payment-method button{
+    margin-top: 0.5em;
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding: 0.5em 2em;
+    border:none;
+    outline: none;
+    color: white;
+    background-color: #fe5339;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+}
+.terms{
+    margin-top: 2px;
+    font-size: small;
+    font-weight: 300;
+}

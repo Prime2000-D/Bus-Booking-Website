@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    background: rgb(122, 255, 222);
+    color: white;
+    font-family: 'Montserrat', Open_Sans, Georgia, Times New Roman, Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#checked{
+    border-bottom: 2px solid #fe5339;
+}
+header{
+    position: relative;
+    background-image: url("../jpg/4387975.png");
+    background-color: rgb(22, 47, 94);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-blend-mode: exclusion; */
+    margin: 0px;
+    padding:0px;
+    text-align: center;
+    height: 550px;
+    white-space: nowrap;
+    overflow: hidden;
+}     
+.title-container{
+    margin:4em;
+    padding: 0 auto;
+    /* background-color: rgba(0, 0, 0, 0.226); */
+    text-align: center;
+    transform: translateY(-20%);
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+.title-container h1{
+    font-weight: 90;
+    font-size: 4.8em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px#801a1a6c;
+    font-weight: bold;
+    color: #fe5339;
+}
+.title-container h2{
+    font-size: 1.8em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 9px;   
+    color: rgb(122, 255, 222);
+}
+.form-container{
+    /* background-color: rgba(0, 0, 0, 0.438); */
+    transform: translateY(-40%); 
+    display:grid;
+    grid-template-rows: repeat(2, 5em);
+    grid-template-columns: repeat(3, 20.58em);
+    grid-gap: 5px;
+    grid-template-areas: 
+    "box1 box2 box3"
+    "0 box4 00";
+    width: 1010px;
+    margin: 0 auto;
+
+}
+.boxes{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:25px;
+    padding: 20px;
+    font-size: 18px;
+    color:gray;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    width: 280px;
+}
+.box-btn{
+    cursor: pointer;
+    border:0;
+    border-radius: 2px;
+    background-color: rgba(0, 54, 155, 0.726);
+    color: white;
+    font-size: 20px;
+    padding: 1em 1.5em;
+    width: 10em;
+    position: relative;
+    z-index: 1;
+    transform: translateX(40px);
+}
+.box-btn::after{
+    content:'';
+    background-color: rgba(0, 54, 155, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-blend-mode: multiply;
+    z-index: -1;
+    transition: transform 250ms ease-in;
+}
+.box-btn::after{
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.box-btn:hover::after{
+   transform: scaleX(1);
+   transform-origin: left;
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+
+.boxes{
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+}
+.notification-container{
+    position: relative;
+    left:20%;
+    width: 50%;
+    margin-top:-2em;
+    color:white;
+    box-shadow: 0 0 5px black;
+    }
+.notification-content{
+    background-color:#232323;
+    padding:4em;
+    width:100%;
+    outline:2px solid #fe5339;
+    outline-offset: -1.5em;
+    color:#FFF;
+    position:relative;
+}
+.notification-content h4{
+    color:#fe5339;
+    position:absolute;
+    left:50%;
+    width:322px;
+    transform:translateX(-70%);
+    top:0.8em;
+    padding:0 1em;
+    background:#232323;
+}
+.notification-content p{
+    margin: -0.5em;
+    padding:0;
+    color: whitesmoke;
+}
+.registerbtn{
+    margin: -1em;
+    background: #fe5339;
+    color:whitesmoke;
+    outline: none;
+    border:0;
+    padding: 0.5em 1em;
+    float: right;
+    border-radius:2px;
+    cursor: pointer;
+}
+
+.offer-card{
+    margin: 1.5em;
+    padding: 2em;
+    background-color: rgb(22, 47, 94);
+    color:whitesmoke;
+    box-shadow: 0 0 0.5em black;
+    align-content: center;
+    
+}
+.offer-slider{
+    background-color: #fe5339;
+    display:grid;
+    grid-template: 
+    "card1 card2" auto
+    "card3 card4" auto ;
+    grid-column-gap: 1.5em;
+    padding: 1.5em;
+    margin: 1.5em 0;
+}
+
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.offer-card h3{
+    margin: 0;
+    text-align: center;
+}
+.offer-card p{
+    margin: 1.5em;
+    text-align: center;
+}
+

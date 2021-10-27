@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    background: white;
+    color: black;
+    font-family: 'Montserrat', Open_Sans, Georgia, Times New Roman, Times, serif;
+    background-color: rgb(245, 245, 245);
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#checked{
+    border-bottom: 2px solid #fe5339;
+}
+main{
+    position: relative;
+    top: -1em;
+    margin:0;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+}
+.location{
+    margin: 1em 0;
+    padding: 1em;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 2px solid grey;
+}
+.location p{
+    margin-left: 1em;
+    font-size: large;
+}
+.show-bus{
+    margin: 1em;
+    font-weight: 300;
+}
+.bus-list{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 0.5em;
+}
+.bus-content{
+   
+    margin: 0.2em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(194, 194, 194);
+    font-size: 16px;
+    background-color: #ffffff;
+}
+.bus-content:hover{
+    box-shadow: 0 0 3px grey;
+}
+.bus-info{
+    padding: 0.5em;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+td{
+    text-align: center;
+}
+.bus-name{
+    text-align:left;
+}
+.bus-time{
+    font-size: 18px;
+}
+.bus-duration{
+    font-weight: 300;
+    color: grey;
+}
+.bus-type{
+    text-align: left;
+}
+.bus-date{
+    color:#fe5339;
+}
+.bus-type, .bus-seat{
+    font-size: 15px;
+    font-weight: 350;
+    color: grey;
+}
+.boarding, .destination{
+    font-size: 15px;
+    font-weight: 500;
+}
+.view-btn{
+    margin-top: 0.5em;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    width: 10em;
+    padding: 0.5em;
+    border:none;
+    outline: none;
+    color: white;
+    background-color: #fe5339;
+    font-size: 15px;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Bus Ticket Booking-BusSafar</title>
+    <link rel="shortcut icon" href="./jpg/bus-safar-favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./stylesheet/home.css">
+    <link rel="stylesheet" href="./stylesheet/login.css">
+    <link rel="stylesheet" href="./stylesheet/footer.css">
+    <link rel="stylesheet" href="./stylesheet/nav.css">
+    <script src="https://use.fontawesome.com/c3cc9dad2b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class='nav'>
+            <a href=""><div id='logo'></div></a>
+            <ul>
+                <li><a href="./index.html" class="ticket" id="checked">Bus Tickets</a></li>
+                <li><a href="./cancelTicket.html" class="cancel">Cancel Ticket</a></li>
+                <li><a href="./printTicket.html" class="print">Print/SMS Ticket</a></li>
+                <li><a href="./help.html" class="help">Help</a></li>
+                <li><a href="#login-page">Login/Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="login-container" id="login-page">
+            <div class="login-card">
+                <div class="inner-box">
+                    <a href="#" class='close'></a>
+                    <h2>Login/Sign Up</h2>
+                    <form action="">
+                        <input type="text" placeholder="E-mail/Mobile No." class="email-box"><br>
+                        <button type="submit" class="submit-btn">Continue</button>
+                        <p>By proceeding, you agree with our <a href=""><strong style="color: rgb(250, 69, 69);">Terms & Condition</strong></a></p><br>
+                    </form>
+                    <button type="submit"class="sign-in-btn" style="background-color: #4267B2;"><img src="./jpg/icons8-facebook-f-96.png">Sign in with Facebook</button><br>
+                    <button type="submit"class="sign-in-btn" style="background-color: #4285F4;"><img src="./jpg/icons8-google-96.png">Sign in with Google</button><br>
+                </div>
+            </div>
+        </div>
+        <div class="title-container">
+            <div class="title">
+                <h1>Book a Ticket Online</h1>
+                <h2>Find your bus here</h2>
+            </div>
+        </div>
+        <form action="./busList.html" method="GET" class="form-container">
+                    <input type="text" placeholder="From" class="boxes box1">
+                    <input type="text" placeholder="To" class="boxes box2">
+                    <input type="date" placeholder='Journey-date'class="boxes box3" id="txtDate" style="text-transform: uppercase;">
+                    <button class="boxes box-btn box4">Search Buses</button>
+        </form>
+       
+    </header>
+    <div class="container">
+    <section class="notification-container">
+        <div class="notification-content">
+            <h4>Pre-Register to get timely updates</h4>
+            <p><strong>Offers</strong> you are special for us</p>
+            <button class='registerbtn'>Register</button>
+        </div>
+    </section>
+    </div>
+    <section class="offers">
+        <div class="offer-slider">
+            <div class="offer-card card1"> 
+                
+                <h3>Easy Booking</h3>
+                <p>Best features and fast access to the database which gives you easy booking facilities and thus time efficient.</p>
+            </div>
+            <div class="offer-card card2" >
+                <i class="fas fa-shield-alt"></i>
+                <h3>Safety</h3>
+                <p>With Safety+ we have brought in a set of measures like Sanitized buses, mandatory masks etc. to ensure you travel safely.</p>
+            </div>
+            <div class="offer-card card3">
+                <i class="im im-book"></i>
+                <h3>Lowest prices</h3>
+                <p>We always give you the lowest price with the best partner offers.</p>
+            </div>
+            <div class="offer-card card4" >
+                <h3>Benefits</h3>
+                <p>We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="about-container">
+            <div class="list-container" id='list'>
+                <div class="list-content">
+                    <ul>
+                        <li>About BusSafar</li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Mobile Version</a></li>
+                    </ul>
+                </div>
+                <div class="list-content">
+                    <ul>
+                        <li>Traveller Tools</li>
+                        <li><a href="">Track My Bus</a></li>
+                        <li><a href="">Cancellation</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Sitemap</a></li>
+                        <li><a href="">Offers</a></li>
+                    </ul>
+                </div>
+                <div class="list-content">
+                    <ul>
+                        <li>Legal</li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id='about'>
+                <div id="logo-sm">BusSafar</div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus saepe illo quidem incidunt, iste, ipsa quis eos consequatur labore distinctio voluptas voluptatem sed! Quo, consequuntur. Neque eum quam quos. Quia.</p>
+                <div class="social-icon">
+                    <a href=""><svg class="icon facebook" width="50px" height="50px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+                    <a href=""><svg class="icon twitter" width="50px" height="50px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+                </div>
+                <p>©2021 primelab All right reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+    $(function(){
+        var dtToday = new Date();
+        
+        var month = dtToday.getMonth() + 1;
+        var day = dtToday.getDate();
+        var year = dtToday.getFullYear();
+        if(month < 10)
+            month = '0' + month.toString();
+        if(day < 10)
+            day = '0' + day.toString();
+        
+        var minDate= year + '-' + month + '-' + day;
+        
+        $('#txtDate').attr('min', minDate);
+    });
+    </script>
+</body>
+</html>

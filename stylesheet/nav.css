@@ -1,0 +1,59 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav{
+    color: #000000;
+    height: 70px;
+    width:100%;
+    font-family: montserrat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ticket, .print, .help, .cancel{
+    border-bottom: none;
+}
+
+.ticket:hover, .print:hover, .help:hover, .cancel:hover{
+    border-bottom: 2px solid #fe5339;
+}
+
+#logo{
+    margin-left: 15px;
+    background-image: url("../jpg/color_logo_transparent.png"); 
+    background-size: 100%;    
+    background-repeat:no-repeat; 
+    background-position: center;
+    height: 73px;
+    width:120px;
+    text-indent: -999999px;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+}
+.nav ul>li{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 550;
+    color: whitesmoke;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-transform:uppercase;
+}
+.nav li:last-child>a{
+    background: white;
+    color: #fe5339;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+}
